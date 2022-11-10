@@ -1,0 +1,15 @@
+.app-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--very-dark-blue);
+
+    img {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+.app-container.light-mode {
+    background-color: var(--light-grayish-blue);
+}

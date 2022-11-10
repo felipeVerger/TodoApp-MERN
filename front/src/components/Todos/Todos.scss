@@ -1,0 +1,71 @@
+.todos-container {
+    position: absolute;
+    top: 37%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .content-block {
+        width: 40%;
+        max-height: 400px;
+        height: 400px;
+        background-color: var(--todo-bg-color);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 990px){
+            width: 80%;
+        }
+
+        .todos-list {
+            width: 100%;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
+    .content-block.light-mode {
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .todos-actions {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--font-base);
+        font-size: 1em;
+        color: var(--dark-grayish-blue);
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: var(--dark-grayish-blue);
+            font-family: var(--font-base);
+            font-size: 1em;
+            &:hover {
+                cursor: pointer;
+                color: var(--light-grayish-blue);
+            }
+        }
+
+        .active:hover {
+            color: black;
+        }
+
+        .filters {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}

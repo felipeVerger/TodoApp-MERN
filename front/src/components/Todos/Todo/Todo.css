@@ -1,0 +1,93 @@
+.todo-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-container .todo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todo-container .todo .todo-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.todo-container .todo .todo-content .left-todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.todo-container .todo .todo-content .left-todo button {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid var(--light-grayish-blue);
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.todo-container .todo .todo-content .left-todo button.completed {
+  background: -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
+  background: linear-gradient(#57ddff, #c058f3);
+}
+
+.todo-container .todo .todo-content .left-todo p {
+  font-family: var(--font-base);
+  font-size: 1.2em;
+  color: var(--light-grayish-blue);
+}
+
+.todo-container .todo .todo-content .left-todo p.light-mode {
+  color: var(--dark-grayish-blue);
+}
+
+.todo-container .todo .todo-content .left-todo span {
+  font-family: var(--font-base);
+  font-size: 0.7em;
+  color: var(--dark-grayish-blue);
+}
+
+.todo-container .todo .todo-content .todo-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+/*# sourceMappingURL=Todo.css.map */

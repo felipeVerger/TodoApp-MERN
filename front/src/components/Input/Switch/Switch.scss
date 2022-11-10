@@ -1,0 +1,42 @@
+.container {
+    height: 40px;
+    width: 100px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, 
+                      rgba(253,203,50,1) 0%, 
+                      rgba(244,56,98,1) 100.2%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .handle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+.icon {
+    color: #f88748;
+}
+
+  // if data-darkmode is true then add some styles
+.container.active {
+    background-color: #52527a;
+    background-image: linear-gradient(109.8deg,
+              rgb(41, 2, 78) -5.2%,
+              rgb(31, 10, 114) -5.2%,
+              rgb(179, 53, 120) 103.3%);
+}
+
+.icon {
+  color: #501a96;
+}

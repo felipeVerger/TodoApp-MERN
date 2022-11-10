@@ -1,0 +1,105 @@
+.todos-container {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todos-container .content-block {
+  width: 40%;
+  max-height: 400px;
+  height: 400px;
+  background-color: var(--todo-bg-color);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 990px) {
+  .todos-container .content-block {
+    width: 80%;
+  }
+}
+
+.todos-container .content-block .todos-list {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.todos-container .content-block .todos-list::-webkit-scrollbar {
+  display: none;
+}
+
+.todos-container .content-block.light-mode {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.todos-container .todos-actions {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: var(--font-base);
+  font-size: 1em;
+  color: var(--dark-grayish-blue);
+}
+
+.todos-container .todos-actions button {
+  background-color: transparent;
+  border: none;
+  color: var(--dark-grayish-blue);
+  font-family: var(--font-base);
+  font-size: 1em;
+}
+
+.todos-container .todos-actions button:hover {
+  cursor: pointer;
+  color: var(--light-grayish-blue);
+}
+
+.todos-container .todos-actions .active:hover {
+  color: black;
+}
+
+.todos-container .todos-actions .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+/*# sourceMappingURL=Todos.css.map */
